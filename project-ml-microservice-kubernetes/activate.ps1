@@ -1,0 +1,1 @@
+C:\Users\seifl\Envs\project-ml-microservice-kubernetes\Scripts\activate.ps1
