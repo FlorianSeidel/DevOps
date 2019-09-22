@@ -5,11 +5,12 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+# Defined in docker-compose and .env file
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+docker login $1
 
 # Step 3:
 # Push image to a docker repository
+docker-compose push
