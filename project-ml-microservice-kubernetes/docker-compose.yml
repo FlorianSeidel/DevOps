@@ -1,0 +1,7 @@
+version: '3'
+services:
+  predictor:
+    build: .
+    image: $REPOSITORY/ml-microservice:$TAG
+    ports:
+      - "8000:80"
