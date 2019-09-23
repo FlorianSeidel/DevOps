@@ -22,5 +22,4 @@ health_check "http://localhost:8000"
 echo "Application running"
 
 # Step 2:
-
 docker-compose images

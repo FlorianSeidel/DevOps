@@ -1,0 +1,30 @@
+Attaching to project-ml-microservice-kubernetes_predictor_1
+[36mpredictor_1  |[0m  * Serving Flask app "app" (lazy loading)
+[36mpredictor_1  |[0m  * Environment: production
+[36mpredictor_1  |[0m    WARNING: This is a development server. Do not use it in a production deployment.
+[36mpredictor_1  |[0m    Use a production WSGI server instead.
+[36mpredictor_1  |[0m  * Debug mode: on
+[36mpredictor_1  |[0m /usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+[36mpredictor_1  |[0m   UserWarning)
+[36mpredictor_1  |[0m /usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator GradientBoostingRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+[36mpredictor_1  |[0m   UserWarning)
+[36mpredictor_1  |[0m  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+[36mpredictor_1  |[0m  * Restarting with stat
+[36mpredictor_1  |[0m /usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+[36mpredictor_1  |[0m   UserWarning)
+[36mpredictor_1  |[0m /usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator GradientBoostingRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+[36mpredictor_1  |[0m   UserWarning)
+[36mpredictor_1  |[0m  * Debugger is active!
+[36mpredictor_1  |[0m  * Debugger PIN: 340-228-567
+[36mpredictor_1  |[0m 172.31.0.1 - - [22/Sep/2019 11:19:13] "HEAD / HTTP/1.1" 200 -
+[36mpredictor_1  |[0m [2019-09-22 11:29:31,460] INFO in app: JSON payload: 
+[36mpredictor_1  |[0m {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[36mpredictor_1  |[0m [2019-09-22 11:29:31,499] INFO in app: Inference payload DataFrame: 
+[36mpredictor_1  |[0m    CHAS     RM    TAX  PTRATIO      B  LSTAT
+[36mpredictor_1  |[0m 0     0  6.575  296.0     15.3  396.9   4.98
+[36mpredictor_1  |[0m [2019-09-22 11:29:31,510] INFO in app: Scaling Payload: 
+[36mpredictor_1  |[0m    CHAS     RM    TAX  PTRATIO      B  LSTAT
+[36mpredictor_1  |[0m 0     0  6.575  296.0     15.3  396.9   4.98
+[36mpredictor_1  |[0m [2019-09-22 11:29:31,516] INFO in app: Prediction: 
+[36mpredictor_1  |[0m [20.35373177134412]
+[36mpredictor_1  |[0m 172.31.0.1 - - [22/Sep/2019 11:29:31] "POST /predict HTTP/1.1" 200 -
