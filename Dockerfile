@@ -10,6 +10,7 @@ COPY app.py /app
 COPY requirements.txt /app
 COPY Makefile /app
 COPY model_data /app/model_data
+COPY .env /app
 
 ## Step 3:
 # Install packages from requirements.txt
