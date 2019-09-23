@@ -18,6 +18,10 @@ test:
 	
 
 lint:
+	hadolint Dockerfile
+	pylint --disable=R,C,W1203 app.py
+
+docker_lint:
 	docker pull hadolint/hadolint
 	docker run --rm -i hadolint/hadolint < Dockerfile
 	pylint --disable=R,C,W1203 app.py
